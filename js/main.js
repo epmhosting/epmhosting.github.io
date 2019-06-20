@@ -22,6 +22,8 @@ if ('serviceWorker' in navigator) {
       .then(reg => console.log('Service Worker: Registered (Pages)'))
       .catch(err => console.log(`Service Worker: Error: ${err}`));
   });
+} else {
+  console.log('Service Worker not supported');
 }
 
-console.log('Done.  1111')
+console.log('Done.')

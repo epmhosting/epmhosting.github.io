@@ -41,3 +41,5 @@ self.addEventListener('fetch', e => {
       .catch(err => caches.match(e.request).then(res => res))
   );
 });
+
+console.log('site')
